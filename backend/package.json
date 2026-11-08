@@ -1,0 +1,8 @@
+{
+  "name": "timemanager-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend API for the Смена workforce app",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" }
+}
