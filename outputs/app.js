@@ -18,7 +18,7 @@ let currentView = currentUser?.role === 'employee' ? 'my-shift' : 'dashboard';
 const app = document.querySelector('#app');
 const save = () => { localStorage.setItem('shift_users',JSON.stringify(users)); localStorage.setItem('shift_data',JSON.stringify(shifts)); localStorage.setItem('shift_queue',JSON.stringify(queue)); localStorage.setItem('shift_objects',JSON.stringify(objects)); };
 const toast = message => { const el=document.querySelector('#toast'); el.textContent=message; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),2800); };
-const icon = name => ({grid:'▦',map:'⌖',users:'♙',settings:'⚙',logout:'↪',clock:'◷'}[name] || '•');
+const icon = name => ({grid:'▦',map:'⌖',users:'♙',settings:'⚙',logout:'↪',clock:'◷',pin:'⌂'}[name] || '•');
 const initials = name => name.trim().split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
 const isOnline = () => navigator.onLine !== false;
 
